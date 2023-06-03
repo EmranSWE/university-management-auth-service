@@ -1,2 +1,5 @@
 {"level":"info","message":"Database connected successfully!","service":"user-service"}
 {"level":"info","message":"Example app listening on port 5000","service":"user-service"}
+{"level":"info","message":"Database connected successfully!","service":"user-service"}
+{"level":"info","message":"Example app listening on port 5000","service":"user-service"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.cluster0.oxy4oc0.mongodb.net","level":"error","service":"user-service","syscall":"querySrv"}
