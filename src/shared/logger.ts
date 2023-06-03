@@ -14,12 +14,7 @@ const myFormat = printf(({ level, message, timestamp }) => {
 
 const logger = createLogger({
   level: 'info',
-  format: combine(
-    label({ label: 'right meow!' }),
-    timestamp(),
-    prettyPrint(),
-    myFormat
-  ),
+  format: combine(label(), timestamp(), prettyPrint(), myFormat),
   defaultMeta: { service: 'user-service' },
   transports: [
     new transports.Console(),
