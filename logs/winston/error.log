@@ -1,0 +1,1 @@
+2023-06-03T18:42:35.004Z error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
