@@ -17,5 +17,5 @@ app.use('/api/v1/users/', usersRouter)
 app.get('/', async (req: Request, res: Response) => {
   res.send('Working successfully!')
 })
-
+console.log(app.get('env'))
 export default app
