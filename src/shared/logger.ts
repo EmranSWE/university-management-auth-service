@@ -32,12 +32,7 @@ const logger = createLogger({
 
 const errorLogger = createLogger({
   level: 'error',
-  format: combine(
-    label({ label: 'right meow!' }),
-    timestamp(),
-    prettyPrint(),
-    myFormat
-  ),
+  format: combine(label({}), timestamp(), prettyPrint(), myFormat),
   defaultMeta: { service: 'user-service' },
   transports: [
     new transports.Console(),
