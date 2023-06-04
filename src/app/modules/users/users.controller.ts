@@ -1,6 +1,7 @@
 import { Request, Response } from 'express-serve-static-core'
 import userService from './users.service'
-const createUser = async (req: Request, res: Response) => {
+import { NextFunction } from 'express'
+const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { user } = req.body
     const result = await userService.createUser(user)
@@ -9,11 +10,8 @@ const createUser = async (req: Request, res: Response) => {
       message: 'Successfully created a user',
       data: result,
     })
-  } catch (error) {
-    res.status(400).json({
-      status: 'Fail',
-      message: 'Failed to create a user',
-    })
+  } catch (err) {
+    next(err)
   }
 }
 
