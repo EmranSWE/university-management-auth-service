@@ -1,24 +1,24 @@
-import mongoose from 'mongoose'
-import { IgenericErrorMessage } from '../interfaces/error'
-import { IGeneicErrorResponse } from '../interfaces/common'
+import mongoose from 'mongoose';
+import { IGenericErrorMessage } from '../interfaces/error';
+import { IGenericErrorResponse } from '../interfaces/common';
 
 const handleValidationError = (
   err: mongoose.Error.ValidationError
-): IGeneicErrorResponse => {
-  const errors: IgenericErrorMessage[] = Object.values(err.errors).map(
+): IGenericErrorResponse => {
+  const errors: IGenericErrorMessage[] = Object.values(err.errors).map(
     (el: mongoose.Error.ValidatorError | mongoose.Error.CastError) => {
       return {
         path: el?.path,
-        message: [el?.message],
-      }
+        message: el?.message,
+      };
     }
-  )
-  const statusCode = 400
+  );
+  const statusCode = 400;
   return {
     statusCode,
     message: 'Validation Error',
     errorMessages: errors,
-  }
-}
+  };
+};
 
-export default handleValidationError
+export default handleValidationError;
