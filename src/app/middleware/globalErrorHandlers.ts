@@ -1,11 +1,11 @@
-import { NextFunction, Request, Response } from 'express'
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express'
 import { IgenericErrorMessage } from '../../interfaces/error'
 import handleValidationError from '../../errors/handleValidationError'
 import ApiError from '../../errors/ApiErrors'
 import config from '../../config'
 
 // global error handler
-const globalErrorHandlers = (
+const globalErrorHandlers: ErrorRequestHandler = (
   err: any,
   req: Request,
   res: Response,
