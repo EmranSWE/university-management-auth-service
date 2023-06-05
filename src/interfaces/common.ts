@@ -1,8 +1,8 @@
-export type IGeneicErrorResponse = {
-  statusCode: number
-  message: string
+export type IGenericErrorResponse = {
+  statusCode: number;
+  message: string;
   errorMessages: {
-    path: string
-    message: string[]
-  }[]
-}
+    path: string;
+    message: string;
+  }[];
+};

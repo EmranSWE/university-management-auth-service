@@ -1,0 +1,4 @@
+Mon Jun 05 2023 23:00:27 GMT+0600 (Bangladesh Standard Time)23:0:0 error: querySrv ESERVFAIL _mongodb._tcp.cluster0.oxy4oc0.mongodb.net
+Mon Jun 05 2023 23:01:49 GMT+0600 (Bangladesh Standard Time)23:1:1 error: querySrv ESERVFAIL _mongodb._tcp.cluster0.oxy4oc0.mongodb.net
+Mon Jun 05 2023 23:02:06 GMT+0600 (Bangladesh Standard Time)23:2:2 error: querySrv ESERVFAIL _mongodb._tcp.cluster0.oxy4oc0.mongodb.net
+Mon Jun 05 2023 23:02:09 GMT+0600 (Bangladesh Standard Time)23:2:2 error: querySrv ESERVFAIL _mongodb._tcp.cluster0.oxy4oc0.mongodb.net
