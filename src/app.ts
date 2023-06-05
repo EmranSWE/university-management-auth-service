@@ -14,9 +14,8 @@ app.use(express.urlencoded({ extended: true }))
 //Applications routes
 app.use('/api/v1/users/', UserRoutes)
 
-//testing
 app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-  res.send('Server is running💽')
+  // throw new Error('New Error')
   next()
 })
 
