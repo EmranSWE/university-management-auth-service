@@ -1,105 +1,105 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\.022cdda250767ab61235206a2a3a7d13e8ac89f7-audit.json",
+  "files": [
+    {
+      "date": 1685888427927,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-20-error.log",
+      "hash": "0e21ab7f4eef6e6801b7986e1718dc5417971318459a7e14ff0a1190e3766ed0"
     },
-    "auditLog": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\.022cdda250767ab61235206a2a3a7d13e8ac89f7-audit.json",
-    "files": [
-        {
-            "date": 1685888427927,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-20-error.log",
-            "hash": "0e21ab7f4eef6e6801b7986e1718dc5417971318459a7e14ff0a1190e3766ed0"
-        },
-        {
-            "date": 1685891176793,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-21-error.log",
-            "hash": "34dfb661460355274966f7d2960b794afe49136524d735aa2136989356c0a0bf"
-        },
-        {
-            "date": 1685895418828,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-22-error.log",
-            "hash": "fa1bc85e7c518aa91a5ab8601a7dff7df204e24a47deb0125dfc78b2651d2b25"
-        },
-        {
-            "date": 1685900853961,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-23-error.log",
-            "hash": "b8d5b76699ee5fec499121e30109a9ea95cac7842e38e95acdd6959a0e6e7285"
-        },
-        {
-            "date": 1685902635797,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-00-error.log",
-            "hash": "c3ce8541dfb1303638547923499a3c4ae96d7022039c003b34df395364626112"
-        },
-        {
-            "date": 1685971034883,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-19-error.log",
-            "hash": "93c0366586b824e15a0555c66aa036f34fc7bfd4dc676a3fc8287ee67f4c9e49"
-        },
-        {
-            "date": 1685974738009,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-20-error.log",
-            "hash": "4aa0fce04bc63482dad1bb1154e5a5c58ba67ed456ee0b327b097077111660ba"
-        },
-        {
-            "date": 1685977213818,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-21-error.log",
-            "hash": "a6d3d65d2d98b6384da743848f8024c98ff67a0fb6cbc696986eb5ee5ab9dda8"
-        },
-        {
-            "date": 1685980928903,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-22-error.log",
-            "hash": "c73116bc9023bf71d5a35de123b9e9b1cedfdf8d1fd4d166c82913c241dc7f34"
-        },
-        {
-            "date": 1685984427542,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-23-error.log",
-            "hash": "61a3565986512d1c135bda870943daef779510c56477c1a66b92a9b377ce2099"
-        },
-        {
-            "date": 1685988539784,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-00-error.log",
-            "hash": "dfabef318323c2981d90625bcb6468e9b73ab5f6e8379c4286fc36a3f151b8b4"
-        },
-        {
-            "date": 1685991603848,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-01-error.log",
-            "hash": "267745bb303ee6070163d793c91f59ef2c44bffcffdd378304800db9af2cfabe"
-        },
-        {
-            "date": 1685998269657,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-02-error.log",
-            "hash": "faabb0aa9e2dfd70227ee7b6b9fd5c0bef83483ef9e955761b8f379a733a94a8"
-        },
-        {
-            "date": 1685999181831,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-03-error.log",
-            "hash": "061d64cb7ba80f30a274918ad347908fa7d5a31fbb5c0f193b1c235994a8a70e"
-        },
-        {
-            "date": 1686150560388,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-07-06-21-error.log",
-            "hash": "3bab1ede2176742c5cfda02f1adcf5f23f6862c1682470839157f16de1261c27"
-        },
-        {
-            "date": 1686161515204,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-08-06-00-error.log",
-            "hash": "311fec512f6ed7cccfa93734c7ce8d8ea62765e83636bb2b668c1766a22f45b6"
-        },
-        {
-            "date": 1686164588338,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-08-06-01-error.log",
-            "hash": "bedffe5932cb9787d095c9b110078ba8fdd1a21766b53a181d36c4a74cc3804e"
-        },
-        {
-            "date": 1686405515920,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-19-error.log",
-            "hash": "1c73023d8bea1f1c0da2e573310372e7f494696902a5a8ad4b12b300b6743df4"
-        },
-        {
-            "date": 1686405638961,
-            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-20-error.log",
-            "hash": "941019b6dfbcddd4f59761b12bd8ecb7fca6a1d1c6675a10cdccefa9e728174f"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1685891176793,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-21-error.log",
+      "hash": "34dfb661460355274966f7d2960b794afe49136524d735aa2136989356c0a0bf"
+    },
+    {
+      "date": 1685895418828,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-22-error.log",
+      "hash": "fa1bc85e7c518aa91a5ab8601a7dff7df204e24a47deb0125dfc78b2651d2b25"
+    },
+    {
+      "date": 1685900853961,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-04-06-23-error.log",
+      "hash": "b8d5b76699ee5fec499121e30109a9ea95cac7842e38e95acdd6959a0e6e7285"
+    },
+    {
+      "date": 1685902635797,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-00-error.log",
+      "hash": "c3ce8541dfb1303638547923499a3c4ae96d7022039c003b34df395364626112"
+    },
+    {
+      "date": 1685971034883,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-19-error.log",
+      "hash": "93c0366586b824e15a0555c66aa036f34fc7bfd4dc676a3fc8287ee67f4c9e49"
+    },
+    {
+      "date": 1685974738009,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-20-error.log",
+      "hash": "4aa0fce04bc63482dad1bb1154e5a5c58ba67ed456ee0b327b097077111660ba"
+    },
+    {
+      "date": 1685977213818,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-21-error.log",
+      "hash": "a6d3d65d2d98b6384da743848f8024c98ff67a0fb6cbc696986eb5ee5ab9dda8"
+    },
+    {
+      "date": 1685980928903,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-22-error.log",
+      "hash": "c73116bc9023bf71d5a35de123b9e9b1cedfdf8d1fd4d166c82913c241dc7f34"
+    },
+    {
+      "date": 1685984427542,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-05-06-23-error.log",
+      "hash": "61a3565986512d1c135bda870943daef779510c56477c1a66b92a9b377ce2099"
+    },
+    {
+      "date": 1685988539784,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-00-error.log",
+      "hash": "dfabef318323c2981d90625bcb6468e9b73ab5f6e8379c4286fc36a3f151b8b4"
+    },
+    {
+      "date": 1685991603848,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-01-error.log",
+      "hash": "267745bb303ee6070163d793c91f59ef2c44bffcffdd378304800db9af2cfabe"
+    },
+    {
+      "date": 1685998269657,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-02-error.log",
+      "hash": "faabb0aa9e2dfd70227ee7b6b9fd5c0bef83483ef9e955761b8f379a733a94a8"
+    },
+    {
+      "date": 1685999181831,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-06-06-03-error.log",
+      "hash": "061d64cb7ba80f30a274918ad347908fa7d5a31fbb5c0f193b1c235994a8a70e"
+    },
+    {
+      "date": 1686150560388,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-07-06-21-error.log",
+      "hash": "3bab1ede2176742c5cfda02f1adcf5f23f6862c1682470839157f16de1261c27"
+    },
+    {
+      "date": 1686161515204,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-08-06-00-error.log",
+      "hash": "311fec512f6ed7cccfa93734c7ce8d8ea62765e83636bb2b668c1766a22f45b6"
+    },
+    {
+      "date": 1686164588338,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-08-06-01-error.log",
+      "hash": "bedffe5932cb9787d095c9b110078ba8fdd1a21766b53a181d36c4a74cc3804e"
+    },
+    {
+      "date": 1686405515920,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-19-error.log",
+      "hash": "1c73023d8bea1f1c0da2e573310372e7f494696902a5a8ad4b12b300b6743df4"
+    },
+    {
+      "date": 1686405638961,
+      "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-20-error.log",
+      "hash": "941019b6dfbcddd4f59761b12bd8ecb7fca6a1d1c6675a10cdccefa9e728174f"
+    }
+  ],
+  "hashType": "sha256"
 }
