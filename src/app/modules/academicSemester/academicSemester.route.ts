@@ -1,4 +1,4 @@
-import { AcademicSemesterValidation } from './academicSemester.validation';
+// import { AcademicSemesterValidation } from './academicSemester.validation';
 import express from 'express';
 import validateRequest from '../../middleware/validateRequest';
 

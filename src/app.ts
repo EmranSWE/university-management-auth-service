@@ -1,4 +1,4 @@
-import express, { Application, NextFunction, Request, Response } from 'express';
+import express, { Application } from 'express';
 const app: Application = express();
 import cors from 'cors';
 import globalErrorHandlers from './app/middleware/globalErrorHandlers';
@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //Applications routes
-app.use('/api/v1/users/', UserRoutes);
+app.use('/api/v1/users', UserRoutes);
 
-app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-  // throw new Error('New Error')
-  next();
-});
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   // throw new Error('New Error')
+//   next();
+// });
 
 //global error handler
 app.use(globalErrorHandlers);
