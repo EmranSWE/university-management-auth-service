@@ -7,6 +7,7 @@ import httpStatus from 'http-status';
 const createAcademicSemester: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { ...academicSemesterData } = req.body;
+
     const result = await AcademicSemesterService.createSemester(
       academicSemesterData
     );

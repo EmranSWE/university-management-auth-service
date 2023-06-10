@@ -89,6 +89,16 @@
             "date": 1686164588338,
             "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-08-06-01-error.log",
             "hash": "bedffe5932cb9787d095c9b110078ba8fdd1a21766b53a181d36c4a74cc3804e"
+        },
+        {
+            "date": 1686405515920,
+            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-19-error.log",
+            "hash": "1c73023d8bea1f1c0da2e573310372e7f494696902a5a8ad4b12b300b6743df4"
+        },
+        {
+            "date": 1686405638961,
+            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-10-06-20-error.log",
+            "hash": "941019b6dfbcddd4f59761b12bd8ecb7fca6a1d1c6675a10cdccefa9e728174f"
         }
     ],
     "hashType": "sha256"

@@ -13,6 +13,7 @@ const createSemester = async (
   }
 
   const result = await academicSemester.create(payload);
+  console.log(result);
   return result;
 };
 
