@@ -6,13 +6,13 @@ import { RequestHandler } from 'express';
 const createUser: RequestHandler = catchAsync(async (req, res, next) => {
   const user = req.body;
   const result = await UserService.createUser(user);
-  next();
   sendResponse(res, {
     statusCode: 200,
     success: true,
     message: 'User created successfully',
     data: result,
   });
+  next();
 });
 
 export const UserController = {
