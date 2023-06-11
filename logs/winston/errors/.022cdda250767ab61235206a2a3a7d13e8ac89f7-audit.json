@@ -109,6 +109,11 @@
             "date": 1686496089797,
             "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-11-06-21-error.log",
             "hash": "49533c168548d4b9cc6bc8ef3198a51fc06fa7cc764798dcbda7ef0ed3aaca82"
+        },
+        {
+            "date": 1686499325855,
+            "name": "G:\\Next Level Web development\\Backend project\\University Of Programming Hero\\logs\\winston\\errors\\phu-2023-11-06-22-error.log",
+            "hash": "b06711de2e32a99f200c95660430c99bba9137b3b28fd0883b42d2538ad517d2"
         }
     ],
     "hashType": "sha256"
