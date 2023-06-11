@@ -1,8 +1,5 @@
 import { NextFunction, Request, RequestHandler, Response } from 'express';
 import { AcademicSemesterService } from './academicSemester.service';
-// import catchAsync from '../../../shared/catchAsync';
-// import sendResponse from '../../../shared/sendResponse';
-// import httpStatus from 'http-status';
 
 const createSemester: RequestHandler = async (
   req: Request,
