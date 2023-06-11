@@ -9,8 +9,8 @@ process.on('uncaughtException', error => {
   process.exit(1);
 });
 
+let server: Server;
 async function bootstrap() {
-  let server: Server;
   try {
     await mongoose.connect(config.database_url as string);
     logger.info('Database connected successfully!');
@@ -19,7 +19,7 @@ async function bootstrap() {
       logger.info(`Example app listening on port ${config.port}`);
     });
   } catch (error) {
-    errorLogger.error(error);
+    errorLogger.error('Failed to connect database', error);
   }
 
   process.on('unhandledRejection', error => {
@@ -31,16 +31,14 @@ async function bootstrap() {
     } else {
       process.exit(1);
     }
-    process.exit(1);
   });
 }
 
 bootstrap();
 
-// process.on('SIGTERM', () => {
-//   logger.info('SIGTERM is received')
-
-//   if (server) {
-//     server.close()
-//   }
-// })
+process.on('SIGTERM', () => {
+  logger.info('SIGTERM is received');
+  if (server) {
+    server.close();
+  }
+});

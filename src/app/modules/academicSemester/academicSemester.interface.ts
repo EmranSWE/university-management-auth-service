@@ -24,5 +24,4 @@ export type IAcademicSemester = {
   endMonth: IAcademicSemesterMonths;
 };
 
-// Create a new Model type that knows about IUserMethods...
 export type AcademicSemesterModel = Model<IAcademicSemester>;

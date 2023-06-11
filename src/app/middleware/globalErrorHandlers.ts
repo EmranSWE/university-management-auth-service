@@ -9,47 +9,47 @@ import handleZodError from '../../errors/handleZodError';
 
 // global error handler
 const globalErrorHandlers: ErrorRequestHandler = (
-  err: any,
+  error: any,
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   config.env === 'development'
-    ? console.log('GLobal Error Handler ~ ', err)
-    : errorLogger.error('GLobal Error Handler ~', err);
+    ? console.log('GLobal Error Handler ~ ', error)
+    : errorLogger.error('GLobal Error Handler ~', error);
 
   let statusCode = 500;
   let message = 'Something went wrong !';
   let errorMessages: IGenericErrorMessage[] = [];
 
-  if (err?.name === 'ValidationError') {
-    const simplifiedError = handleValidationError(err);
+  if (error?.name === 'ValidationError') {
+    const simplifiedError = handleValidationError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
-  } else if (err instanceof ZodError) {
-    const simplifiedError = handleZodError(err);
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZodError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
-  } else if (err instanceof ApiError) {
-    statusCode = err?.statusCode;
-    message = err.message;
-    errorMessages = err?.message
+  } else if (error instanceof ApiError) {
+    statusCode = error?.statusCode;
+    message = error.message;
+    errorMessages = error?.message
       ? [
           {
             path: '',
-            message: err?.message,
+            message: error?.message,
           },
         ]
       : [];
-  } else if (err instanceof Error) {
-    message = err?.message;
-    errorMessages = err?.message
+  } else if (error instanceof Error) {
+    message = error?.message;
+    errorMessages = error?.message
       ? [
           {
             path: '',
-            message: err?.message,
+            message: error?.message,
           },
         ]
       : [];
@@ -59,7 +59,7 @@ const globalErrorHandlers: ErrorRequestHandler = (
     status: false,
     message,
     errorMessages,
-    stack: config.env !== 'production' ? err?.stack : undefined,
+    stack: config.env !== 'production' ? error?.stack : undefined,
   });
 
   next();

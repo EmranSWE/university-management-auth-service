@@ -57,7 +57,3 @@ const errorLogger = createLogger({
 });
 
 export { logger, errorLogger };
-
-// logs/winstone/
-// success/success.log
-// error.log
