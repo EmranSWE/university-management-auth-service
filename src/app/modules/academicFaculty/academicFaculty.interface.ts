@@ -11,4 +11,7 @@ export type IAcademicFaculty = {
 export const academicFacultyFilterableFields = ['searchTerm', 'title'];
 export const academicFacultySearchableFields = ['title'];
 
-export type AcademicFacultyModel = Model<IAcademicFaculty>;
+export type AcademicFacultyModel = Model<
+  IAcademicFaculty,
+  Record<string, unknown>
+>;

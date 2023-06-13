@@ -8,7 +8,10 @@ type academicFacultySchema = {
   title: string;
 };
 
-const academicFacultySchema = new Schema<IAcademicFaculty>(
+const academicFacultySchema = new Schema<
+  IAcademicFaculty,
+  AcademicFacultyModel
+>(
   {
     title: {
       type: String,
@@ -17,10 +20,13 @@ const academicFacultySchema = new Schema<IAcademicFaculty>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 
 export const AcademicFaculty = model<
   academicFacultySchema,
   AcademicFacultyModel
->('academicFacultySchema', academicFacultySchema);
+>('academicFaculty', academicFacultySchema);
