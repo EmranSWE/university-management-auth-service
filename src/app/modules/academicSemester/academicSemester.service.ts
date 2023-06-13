@@ -1,7 +1,10 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiErrors';
 import { academicSemesterTitleCodeMapper } from './academicSemester.constant';
-import { IAcademicSemester } from './academicSemester.interface';
+import {
+  IAcademicSemester,
+  IAcademicSemesterFilters,
+} from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.model';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
@@ -20,9 +23,24 @@ const createSemester = async (
 };
 
 const getAllSemesters = async (
-  paginationOptions: IPaginationOptions
+  paginationOptions: IPaginationOptions,
+  filters: IAcademicSemesterFilters
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  console.log('paginationOptions', paginationOptions);
+  const academicSemesterSearchableFields = ['title', 'code', 'year'];
+
+  const { searchTerm } = filters;
+  const andConditions = [];
+  if (searchTerm) {
+    andConditions.push({
+      $or: academicSemesterSearchableFields.map(field => ({
+        [field]: {
+          $regex: searchTerm,
+          $options: 'i',
+        },
+      })),
+    });
+  }
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
   const sortConditions: { [key: string]: SortOrder } = {};
@@ -31,7 +49,7 @@ const getAllSemesters = async (
     sortConditions[sortBy] = sortOrder;
   }
 
-  const result = await AcademicSemester.find()
+  const result = await AcademicSemester.find({ $and: andConditions })
     .sort({ createdAt: 'desc' })
     .skip(skip)
     .limit(limit);
