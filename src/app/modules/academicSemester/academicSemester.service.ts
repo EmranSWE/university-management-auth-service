@@ -4,6 +4,7 @@ import { academicSemesterTitleCodeMapper } from './academicSemester.constant';
 import {
   IAcademicSemester,
   IAcademicSemesterFilters,
+  academicSemesterSearchableFields,
 } from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.model';
 import { IPaginationOptions } from '../../../interfaces/pagination';
@@ -26,9 +27,7 @@ const getAllSemesters = async (
   paginationOptions: IPaginationOptions,
   filters: IAcademicSemesterFilters
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const academicSemesterSearchableFields = ['title', 'code', 'year'];
-
-  const { searchTerm } = filters;
+  const { searchTerm, ...filtersData } = filters;
   const andConditions = [];
   if (searchTerm) {
     andConditions.push({
@@ -41,6 +40,13 @@ const getAllSemesters = async (
     });
   }
 
+  if (Object.keys(filtersData).length) {
+    andConditions.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
+      })),
+    });
+  }
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
   const sortConditions: { [key: string]: SortOrder } = {};
