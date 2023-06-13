@@ -10,7 +10,7 @@ const moduleRoutes = [
     route: UserRoutes,
   },
   {
-    path: '/create-semesters',
+    path: '/semesters',
     route: semesterRoutes,
   },
 ];
