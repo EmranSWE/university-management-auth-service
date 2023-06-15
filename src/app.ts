@@ -4,6 +4,7 @@ import cors from 'cors';
 import globalErrorHandlers from './app/middleware/globalErrorHandlers';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+// import { generateFacultyId, generateStudentId } from './app/modules/users/user.utils';
 
 //middleware
 app.use(cors());
@@ -32,4 +33,10 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+
+// const testIds = async()=>{
+//   const testId =await generateFacultyId()
+//   console.log(testId)
+// }
+// testIds()
 export default app;
