@@ -16,9 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 //Applications routes
 app.use('/api/v1/', routes);
 
-//global error handler
-app.use(globalErrorHandlers);
-
 //handle not found route
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(httpStatus.NOT_FOUND).json({
@@ -34,9 +31,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
-// const testIds = async()=>{
-//   const testId =await generateFacultyId()
-//   console.log(testId)
-// }
-// testIds()
+//global error handler
+app.use(globalErrorHandlers);
 export default app;

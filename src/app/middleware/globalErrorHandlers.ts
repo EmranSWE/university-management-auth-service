@@ -1,4 +1,6 @@
-import { ErrorRequestHandler, Request, Response } from 'express';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
 import ApiError from '../../errors/ApiErrors';
@@ -12,7 +14,8 @@ import handleCastError from '../../errors/handleCastError';
 const globalErrorHandlers: ErrorRequestHandler = (
   error: any,
   req: Request,
-  res: Response
+  res: Response,
+  next: NextFunction
 ) => {
   config.env === 'development'
     ? console.log('GLobal Error Handler ~ ', error)
@@ -34,6 +37,7 @@ const globalErrorHandlers: ErrorRequestHandler = (
     errorMessages = simplifiedError.errorMessages;
   } else if (error instanceof ZodError) {
     const simplifiedError = handleZodError(error);
+    console.log('Inside global error', error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
@@ -66,6 +70,7 @@ const globalErrorHandlers: ErrorRequestHandler = (
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
+  next();
 };
 
 export default globalErrorHandlers;
